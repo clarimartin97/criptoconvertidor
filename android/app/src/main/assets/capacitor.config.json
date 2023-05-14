@@ -1,0 +1,6 @@
+{
+	"appId": "com.cripto.convertidor",
+	"appName": "cripto-convertidor",
+	"webDir": "www",
+	"bundledWebRuntime": true
+}

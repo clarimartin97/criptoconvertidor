@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Primer Obligatorio Clara Martín</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/lineicons.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+  <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+  <link rel="stylesheet" href="../cripto-convertidor/css/style.css">
+</head>
+
+<body>
+
+  <section class="navbar-area navbar-nine">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">
+              <img src="assets/images/white-logo.svg" alt="Logo" />
+              
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNine"
+              aria-controls="navbarNine" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="toggler-icon"></span>
+              <span class="toggler-icon"></span>
+              <span class="toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse sub-menu-bar" id="navbarNine">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                  <a class="page-scroll active" href="#hero-area">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="page-scroll" href="#">¿Qué hacemos? </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="page-scroll" href="#">Conversiones comunes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="page-scroll" href="#">NFT</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="navbar-btn d-none d-lg-inline-block">
+              <a class="menu-bar" href="#side-menu-left"><i class="lni lni-menu"></i></a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="sidebar-left">
+    <div class="sidebar-close">
+      <a class="close" href="#close"><i class="lni lni-close"></i></a>
+    </div>
+    <div class="sidebar-content">
+      <div class="sidebar-logo">
+        <a href="index.html"><img src="assets/images/logo.svg" alt="Logo" /></a>
+      </div>
+
+      <div class="sidebar-menu">
+        <h5 class="menu-title">Acceso rápido</h5>
+        <ul>
+          <li><a href="#">Invertir</a></li>
+          <li><a href="#">Ahorrar</a></li>
+          <li><a href="#">Fiscalidad y derechos</a></li>
+        </ul>
+      </div>
+      <div class="sidebar-social align-items-center justify-content-center">
+        <h5 class="social-title">Síguenos en</h5>
+        <ul>
+          <li>
+            <a href="#"><i class="lni lni-facebook-filled"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="lni lni-twitter-original"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="lni lni-linkedin-original"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="lni lni-youtube"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div class="overlay-left"></div>
+  
+  <section id="hero-area" class="header-area header-eight">
+    <div>
+      <div class="row align-items-center">
+        <div class="col-lg-12 col-md-12 col-12">
+          <div class="header-content">
+            <h2 id="titulo">Conversor de criptomonedas</h2>
+            <div class="calculadora">
+              <form id="form-converter">
+                <div>
+                  <label for="inp-monto">Monto</label>
+                  <input type="number" name="monto" id="inp-monto">
+
+                </div>
+                <div>
+                  <label for="sel-moneda-crypto">Cryptomoneda</label>
+                  <select id="sel-moneda-crypto">
+                    <option value=""></option>
+
+                  </select>
+                </div>
+
+                <div>
+                  <label for="sel-moneda-peso">Moneda</label>
+                  <select id="sel-moneda-peso">
+                    <option value=""></option>
+
+                  </select>
+                </div>
+
+                <div>
+                  <label for="inp-fecha">Fecha</label>
+                  <input type="date" id="inp-fecha">
+                </div>
+
+                <div>
+
+                  <button class="convertir" type="submit">Convertir</button>
+
+                </div>
+
+                <div id="resultado"></div>
+
+              </form>
+              <div class="mostrarOtraOpcion">
+                <form id="form-historico">
+
+                  <button class="mostrarGrafica" type="submit">Convertir historico</button>
+
+                </form>
+                <div class="ct-chart ct-perfect-fourth">
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>  
+  </section>
+
+  <div id="clients" class="brand-area section">
+    <div class="section-title-five">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="content">
+              <h2 class="fw-bold">Conóce nuestros clientes</h2>
+              <p>
+                Estos son algunos de los clientes que nos han acompañado,
+                gracias a ellos estamos hoy aquí.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2 col-12">
+          <div class="clients-logos">
+            <div class="single-image">
+              <img src="assets/images/client-logo/graygrids.svg" alt="Brand Logo Images" />
+            </div>
+            <div class="single-image">
+              <img src="assets/images/client-logo/uideck.svg" alt="Brand Logo Images" />
+            </div>
+            <div class="single-image">
+              <img src="assets/images/client-logo/ayroui.svg" alt="Brand Logo Images" />
+            </div>
+            <div class="single-image">
+              <img src="assets/images/client-logo/lineicons.svg" alt="Brand Logo Images" />
+            </div>
+            <div class="single-image">
+              <img src="assets/images/client-logo/tailwindtemplates.svg" alt="Brand Logo Images" />
+            </div>
+            <div class="single-image">
+              <img src="assets/images/client-logo/ecomhtml.svg" alt="Brand Logo Images" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-4">
+          <div class="contact-item-wrapper">
+            <div class="row">
+              <div class="col-12 col-md-6 col-xl-12">
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="lni lni-phone"></i>
+                  </div>
+                  <div class="contact-content">
+                    <h4>Contacto</h4>
+                    <p>095329858</p>
+                    <p>cryptoconvertir@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-12">
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="lni lni-map-marker"></i>
+                  </div>
+                  <div class="contact-content">
+                    <h4>Dirección</h4>
+                    <p>Santa Mónica 2296</p>
+                    <p>Uruguay</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-12">
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="lni lni-alarm-clock"></i>
+                  </div>
+                  <div class="contact-content">
+                    <h4>Horario</h4>
+                    <p>24 Horas / 7 Días a la semana</p>
+                    <p>Horario de oficina: 10 AM - 18:00 PM</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-8">
+          <div class="contact-form-wrapper">
+            <div class="row">
+              <div class="col-xl-10 col-lg-8 mx-auto">
+                <div class="section-title text-center">
+                  <span> ¿Quieres invertir? </span>
+                  <h2>
+                    Contáctanos
+                  </h2>
+                  <p>
+                    Chequeamos nuestros mensajes diariamente.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <form action="#" class="contact-form">
+              <div class="row">
+                <div class="col-md-6">
+                  <input type="text" name="name" id="name" placeholder="Nombre" required />
+                </div>
+                <div class="col-md-6">
+                  <input type="email" name="email" id="email" placeholder="E-mail" required />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <input type="text" name="phone" id="phone" placeholder="Teléfono" required />
+                </div>
+                <div class="col-md-6">
+                  <input type="text" name="subject" id="mail" placeholder="Asunto" required />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <textarea name="message" id="message" placeholder="Escribe tu mensaje" rows="5"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="button text-center rounded-buttons">
+                    <button type="submit" class="btn primary-btn rounded-full">
+                      Enviar mensaje
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-area footer-eleven">
+    <div class="footer-top">
+      <div class="container">
+        <div class="inner-content">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="footer-widget f-about">
+                <div class="logo">
+                  <a href="index.html">
+                    <img src="assets/images/logo.svg" alt="#" class="img-fluid" />
+                  </a>
+                </div>
+                <p>
+                  Haciendo el mundo un mejor lugar a través de elegantes
+                  jararquías.
+                </p>
+                <p class="copyright-text">
+                  <span>© 2022 .</span>Diseñado y Desarrollado por Clara Martín
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-12">
+              <div class="footer-widget f-link">
+                <h5>Soluciones</h5>
+                <ul>
+                  <li><a href="javascript:void(0)">Marketing</a></li>
+                  <li><a href="javascript:void(0)">Analítica</a></li>
+                  <li><a href="javascript:void(0)">Comercio</a></li>
+                  <li><a href="javascript:void(0)">Perspectivas</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-12">
+              <div class="footer-widget f-link">
+                <h5>Soporte</h5>
+                <ul>
+                  <li><a href="javascript:void(0)">Precio</a></li>
+                  <li><a href="javascript:void(0)">Documentación</a></li>
+                  <li><a href="javascript:void(0)">Guías</a></li>
+                  <li><a href="javascript:void(0)">Estados de APIs</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="footer-widget newsletter">
+                <h5>Subscríbete</h5>
+                <p>Subscríbete para recibir novedades</p>
+                <form action="#" method="get" target="_blank" class="newsletter-form">
+                  <input name="EMAIL" placeholder="Correo electrónico" required="required" type="email" />
+                  <div class="button">
+                    <button class="sub-btn">
+                      <i class="lni lni-envelope"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../cripto-convertidor/js/main.js"></script>
+
+  
+  <script>
+
+    let navbarTogglerNine = document.querySelector(
+      ".navbar-nine .navbar-toggler"
+    );
+    navbarTogglerNine.addEventListener("click", function () {
+      navbarTogglerNine.classList.toggle("active");
+    });
+
+    let sidebarLeft = document.querySelector(".sidebar-left");
+    let overlayLeft = document.querySelector(".overlay-left");
+    let sidebarClose = document.querySelector(".sidebar-close .close");
+
+    overlayLeft.addEventListener("click", function () {
+      sidebarLeft.classList.toggle("open");
+      overlayLeft.classList.toggle("open");
+    });
+    sidebarClose.addEventListener("click", function () {
+      sidebarLeft.classList.remove("open");
+      overlayLeft.classList.remove("open");
+    });
+
+    let sideMenuLeftNine = document.querySelector(".navbar-nine .menu-bar");
+
+    sideMenuLeftNine.addEventListener("click", function () {
+      sidebarLeft.classList.add("open");
+      overlayLeft.classList.add("open");
+    });
+
+
+
+  </script>
+</body>
+
+</html>
